@@ -1,52 +1,65 @@
-# 🐾 CatPhotoApp — Free Code Camp Workshop
+# 🐱 Cat Photo App
 
-> *"Everyone loves cute cats online"* — and this repo has receipts. 🌺
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![freeCodeCamp](https://img.shields.io/badge/freeCodeCamp-workshop-0a0a23?style=flat-square&logo=freecodecamp&logoColor=white)
+![Date](https://img.shields.io/badge/built-27%20Sep%202026-lightgrey?style=flat-square)
 
-A tiny, no-nonsense HTML page built during the FreeCodeCamp workshop. No frameworks, no build step, no drama — just markup, doing what markup does best: showing off cats.
+> Mark I of every web developer: a page about cats. Don't judge, the whole internet started here. 🐈
 
----
+A freeCodeCamp workshop page covering the core HTML basics: headings, links, images, lists, and captioned figures.
 
-## 🌸 What lives here
-
-One glorious `.html` file that:
-
-- Greets the world with an **h1** worthy of a cat-themed royal decree
-- Shows off a gallery-worthy cat photo (with a link, because the internet demands options)
-- Ranks cat opinions with brutal honesty — a `<ul>` of things cats *love*, an `<ol>` of things cats *hate*
-- Wraps up with a proper `<footer>` giving credit where it's due
-
-Semantic HTML doing semantic HTML things: `<main>`, `<section>`, `<figure>`, `<figcaption>` — all present, all behaving.
+📄 **File:** [`27-09-2026-FREE-Code-Camp-WORKSHOP-Cat-App.html`](./27-09-2026-FREE-Code-Camp-WORKSHOP-Cat-App.html)
 
 ---
 
-## 🔴 Petal-by-petal breakdown
+## 🧱 What's inside
 
-```
-📄 index.html
- ├── <head>            — charset + title, minimal and correct
- └── <body>
-      ├── <h1>          — the app announces itself
-      ├── Cat Photos    — section: image + gallery link
-      ├── Cat Lists     — section: loves (ul) vs. hates (ol)
-      └── <footer>      — no copyright, all love
-```
-
----
-
-## 🕯️ Code review — a few things I'd tend to before this blooms further
-
-Nothing's on fire, but here's what I noticed while poking around:
-
-1. **`target="_blank"` without a chaperone** — the gallery link opens a new tab but skips `rel="noopener noreferrer"`. Small thing, real thing: it's a minor security/performance leak (the new tab can reach back and mess with `window.opener`).
-2. **No `<meta name="viewport">`** — on mobile this page won't scale properly; it'll just render at desktop width and shrink. One line fixes it.
-3. **Images have no `width`/`height` attributes** — without them, the browser can't reserve space before the image loads, which causes layout shift (the page jumps around as images pop in).
-
-None of these break anything — they're the difference between "works" and "polished."
+| Tag | Where it's used | What it does |
+|-----|-----------------|--------------|
+| `<main>` + `<section>` | Page body | Groups the content into "Cat Photos" and "Cat Lists" |
+| `<h1>`, `<h2>`, `<h3>` | Titles | Builds the heading hierarchy |
+| `<a href>` | "cute cats", "cat photos" | Links to other pages; one uses `target="_blank"` to open a new tab |
+| `<img alt>` | Orange cat, lasagna, kittens | Shows pictures, with alt text for screen readers |
+| `<a>` wrapping `<img>` | Orange cat | Makes the whole image clickable |
+| `<ul>` / `<ol>` | Things cats love / hate | Bulleted list vs. numbered list |
+| `<figure>` + `<figcaption>` | Lasagna, kittens | Pairs an image with its caption |
+| `<em>` / `<strong>` | "love" / "hate" | Emphasis (italic) vs. strong importance (bold) |
+| `<footer>` | Bottom | Credit line with a link |
 
 ---
 
+## 🚀 How to run it
 
+Double-click the `.html` file, or right-click → *Open with* → your browser. The images load from freeCodeCamp's servers, so you'll need an internet connection. 🌐
 
 ---
 
-<p align="center">🌺 no copyright, only cats 🌺</p>
+## 🧠 What I practiced
+
+- Structuring a page with `main`, `section`, and `footer`
+- Writing real **alt text** (it's for people, not just for rules)
+- Choosing `<ul>` vs `<ol>` based on whether order matters
+- Using `<em>` and `<strong>` for *meaning*, not just looks
+
+---
+
+## 💥 Honest corner
+
+- No `viewport` meta tag, so it won't scale nicely on phones.
+- ✅ *Fixed on 3 Oct:* the `<meta charset>` line used to sit out of line in the `<head>`. It's tidied now.
+- No CSS yet, so it looks like the internet in 1995. Charming, but plain.
+
+---
+
+## 🔮 Mark II ideas
+
+- Add `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+- Style it: centered layout, rounded images, a cozy color palette 🎨
+- Add `rel="noopener noreferrer"` to the `target="_blank"` link
+- Swap in my own cat photos (or anyone's cat; I'm not picky)
+
+---
+
+↩️ [Back to examples](../README.md)
+
+*Purr-fectly simple. 😸*
