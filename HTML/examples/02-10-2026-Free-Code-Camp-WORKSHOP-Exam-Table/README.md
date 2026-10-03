@@ -1,26 +1,31 @@
-# 🌺 Calculus Final Exam Grades 🌺
+# 🌺 Calculus Final Exam Grades
 
-> *Red spider lilies bloom once the leaves are gone — much like my confidence after seeing a 54 on a calculus final.*
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![freeCodeCamp](https://img.shields.io/badge/freeCodeCamp-workshop-0a0a23?style=flat-square&logo=freecodecamp&logoColor=white)
+![Date](https://img.shields.io/badge/built-2%20Oct%202026-lightgrey?style=flat-square)
+![Topic](https://img.shields.io/badge/topic-tables-informational?style=flat-square)
 
-A tiny, tidy HTML table from a freeCodeCamp workshop. No CSS, no JavaScript, no drama. Just rows, columns, and the cold, honest truth about five students and one very scary exam. 🥀
+> Five students, one exam, and the cold, honest truth of a 54. 🥀
+
+A tidy HTML table from a freeCodeCamp workshop. It's all about structure: a caption, a header, a body, and a footer.
+
+📄 **File:** [`02-10-2026-Free-Code-Camp-WORKSHOP-Exam-Table.html`](./02-10-2026-Free-Code-Camp-WORKSHOP-Exam-Table.html)
 
 ---
 
-## 🌸 What's inside
-
-One HTML file, one table, five students, one average.
+## 🧱 What's inside
 
 | Part | Tag | What it does |
 |------|-----|--------------|
-| The title | `<caption>` | Tells everyone what the table is about, before they get lost |
-| The header row | `<thead>` + `<th>` | Names the columns: **Last Name**, **First Name**, **Grade** |
-| The body | `<tbody>` | Where the five brave students live |
-| The footer | `<tfoot>` | Holds the **Average Grade** (78.8 — verified, the math checks out ✔️) |
-| The stretchy cell | `colspan="2"` | Lets "Average Grade" sprawl across two columns like a cat on a sofa 🐈 |
+| Title | `<caption>` | Describes the table before anyone reads a cell |
+| Header | `<thead>` + `<th>` | Names the columns: **Last Name**, **First Name**, **Grade** |
+| Body | `<tbody>` + `<td>` | The five students and their grades |
+| Footer | `<tfoot>` | Holds the **Average Grade** |
+| Stretchy cell | `colspan="2"` | Lets "Average Grade" span two columns |
 
 ---
 
-## 🕸️ The petals (a.k.a. the data)
+## 📊 The data
 
 | Last Name | First Name | Grade |
 |-----------|------------|-------|
@@ -31,36 +36,42 @@ One HTML file, one table, five students, one average.
 | Williams | Natalie | 83 |
 | **Average Grade** | | **78.8** |
 
-Alphabetical by last name, because chaos belongs in the garden, not in the gradebook. 🌿
+✔️ Math check: (54 + 92 + 88 + 77 + 83) ÷ 5 = **78.8**. The average is correct.
 
 ---
 
-## 🔥 How to run it
+## 🚀 How to run it
 
-1. Save the file as `index.html` (or keep the original name, it won't judge).
-2. Double-click it.
-3. Your browser blooms a plain little table. That's it. That's the spell. ✨
-
-No installs, no build step, no dependencies. The lily grows on its own.
+Open the `.html` file in a browser. You'll see a plain little table, no installs, no build step. ✨
 
 ---
 
-## 🍂 What I practiced
+## 🧠 What I practiced
 
-- Giving a table a proper `<caption>`
-- Splitting a table into `<thead>`, `<tbody>`, and `<tfoot>`
-- Using `<th>` for headers and `<td>` for data
+- Giving a table a `<caption>`
+- Splitting it into `<thead>`, `<tbody>`, and `<tfoot>`
+- `<th>` for headers vs. `<td>` for data
 - Merging cells with `colspan`
-- Remembering that the footer goes *after* the body in my code, even though it sits at the bottom anyway (HTML is polite like that)
 
 ---
 
-## 🌙 Ideas for the next bloom
+## 💥 Honest corner
 
-- Add `scope="col"` to the header cells so screen readers know what they're reading
-- Dress it up with a little CSS (borders, zebra stripes, maybe a deep red header 🌺)
-- Add the `viewport` meta tag so it behaves on phones
+- The average (78.8) is **typed by hand**, so if a grade changes, it won't update. Tables don't do math!
+- No `scope` attributes on the headers, so screen readers get less help.
+- No CSS (the table has no borders) and no `viewport` meta tag.
 
 ---
 
-*Made with curiosity, a few typos, and a lot of `<td>`s.* 🌺
+## 🔮 Mark II ideas
+
+- Add `scope="col"` to each `<th>` ♿
+- Style it: borders, zebra stripes, and a deep red header 🌺
+- Calculate the average with JavaScript instead of typing it
+- Add a `rowspan` example to practice merging vertically
+
+---
+
+↩️ [Back to examples](../README.md)
+
+*Made with curiosity, a few typos, and a lot of `<td>`s. 🌺*
