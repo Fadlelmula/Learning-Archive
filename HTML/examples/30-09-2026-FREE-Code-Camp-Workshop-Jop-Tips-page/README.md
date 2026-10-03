@@ -1,57 +1,63 @@
-# 🌺 Quincy's Tips for Getting a Developer Job
+# 💬 Quincy's Tips for Getting a Developer Job
 
-> *A tiny, dependency-free HTML page that blooms exactly once: right when you need job-hunting motivation.*
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![freeCodeCamp](https://img.shields.io/badge/freeCodeCamp-workshop-0a0a23?style=flat-square&logo=freecodecamp&logoColor=white)
+![Date](https://img.shields.io/badge/built-30%20Sep%202026-lightgrey?style=flat-square)
 
-🍂 🔴 🍂 🔴 🍂 🔴 🍂
+> Advice worth quoting, so I learned how to quote it *properly*. 📖
 
-## 🥀 What is this?
+A freeCodeCamp workshop page built around quotations and citations, with advice from Quincy Larson's book on learning to code and getting a developer job.
 
-A single static web page built for the freeCodeCamp workshop on **semantic HTML quotes**. It shows three bite-sized pieces of career wisdom from Quincy Larson's book *How to Learn to Code and Get a Developer Job*:
+📄 **File:** [`30-09-2026-FREE-Code-Camp-Workshop-Job-Tips-page.html`](./30-09-2026-FREE-Code-Camp-Workshop-Job-Tips-page.html)
 
-| Section | The vibe |
-|---|---|
-| 🌱 **Envisioning Success** | Close your eyes. Picture yourself shipping software. Nice, right? |
-| 🤝 **Importance of Networking** | Introverts, this one is for you. Yes, you have to leave the cave. |
-| 📣 **Importance of Building a Reputation** | Show your work. Help newer folks. Be the person you needed. |
+---
 
-No JavaScript. No CSS. No build step. No `node_modules` folder the size of a small moon. 🌙
+## 🧱 What's inside
 
-## 🏷️ The HTML tags on stage
+| Piece | Tag | What it does |
+|-------|-----|--------------|
+| Short quote | `<q cite="...">` | An **inline** quote; the browser adds the quotation marks for you |
+| Long quote | `<blockquote cite="...">` | A **block** quote, shown indented |
+| Source title | `<cite>` | Marks the title of the work being quoted (shown in italics) |
+| Dash | `&mdash;` | An HTML entity for the long dash before the author's name |
+| Sections | `<main>` + 3 × `<section>` | *Envisioning Success*, *Importance of Networking*, *Importance of Building a Reputation* |
 
-This page is basically a little theatre for quoting things properly:
+**The difference:** the `cite="..."` **attribute** holds the source URL (invisible to readers), while the `<cite>` **element** shows the title on the page.
 
-- `<q>`: the **inline** quote (short, sweet, lives inside a sentence)
-- `<blockquote>`: the **block** quote (takes the stage, gets its own spotlight)
-- `<cite>`: the title of the work being quoted (book titles get their moment too)
-- `cite="..."` attribute: the **source URL**, hidden in the shadows for machines to read 🕵️
-- `<main>` + `<section>` + `<h2>`: the structure that keeps everything tidy
+---
 
 ## 🚀 How to run it
 
-1. Save the file as `index.html` (or keep the original name, no judgment).
-2. Double-click it.
-3. Your browser opens it. That's it. That's the whole deployment pipeline. 🎉
+Open the `.html` file in a browser. Hover and inspect the quotes with DevTools to see the `cite` URLs, since they don't appear on screen.
 
-## 📁 Project layout
+---
 
-```
-🌺 project/
-└── 📄 index.html    ← the entire garden
-```
+## 🧠 What I practiced
 
-## 🍃 Fun fact (the red spider lily part)
+- Choosing `<q>` vs `<blockquote>` by quote length
+- Putting several `<p>` tags inside a `<blockquote>`
+- Using the `cite` attribute and the `<cite>` element for sources
+- Writing special characters as HTML entities
 
-The red spider lily blooms in autumn, and its flowers and leaves famously never appear at the same time. Job hunting can feel a bit like that: the skills and the opportunity don't always show up together. Keep watering both. 🌺
+---
 
-## 🤝 Contributing
+## 💥 Honest corner
 
-Found a typo? A stray quote mark? A tag that's feeling lonely? Open an issue or a pull request. Small, kind, well-named changes are the best kind. 💌
+- ✅ *Fixed on 3 Oct:* the third `<blockquote>` had a **stray extra `"`** after its `cite` URL (`cite="...""`). Browsers forgive it, but it's invalid HTML and an easy bug to miss. I also tidied that section's indentation.
+- ✅ *Fixed on 3 Oct:* the folder and file name had a typo ("Jop" instead of "Job").
+- The first quote puts text straight inside `<blockquote>`, while the others wrap it in `<p>`. It's valid, but consistency would be nicer.
+- No CSS yet, so the blockquotes are just indented.
+---
 
-## 📜 Credits
+## 🔮 Mark II ideas
 
-- Quotes from **Quincy Larson**, [*How to Learn to Code and Get a Developer Job*](https://www.freecodecamp.org/news/learn-to-code-book/) on freeCodeCamp.
-- Built as part of the freeCodeCamp workshop series. 🔥
+- Run the page through the W3C validator ✅
+- Add a visible link to the source book
+- Style the blockquotes with a colored left border 🎨
+- Wrap the page in `<header>` and `<footer>` for full semantic structure
 
-🍂 🔴 🍂 🔴 🍂 🔴 🍂
+---
 
-*You can become a developer. Bloom on your own schedule.* 🌺
+↩️ [Back to examples](../README.md)
+
+*"You can become a developer." Working on it. 🦾*
