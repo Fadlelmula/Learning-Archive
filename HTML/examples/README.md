@@ -1,71 +1,102 @@
 # 🧪 HTML / examples
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Projects](https://img.shields.io/badge/projects-8-brightgreen?style=for-the-badge)
 ![Status](https://img.shields.io/badge/status-Mark%20I%20(prototype)-orange?style=for-the-badge)
-![Rebuilt in public](https://img.shields.io/badge/skills-rebuilt%20in%20public-blueviolet?style=for-the-badge)
+![No CSS](https://img.shields.io/badge/CSS-not%20yet-lightgrey?style=for-the-badge)
 
-> 🛠️ **The workshop.** Every great suit starts with a garage full of broken prototypes. This folder is mine.
+> 🛠️ **The workshop.** Every great suit starts with a garage full of prototypes, some of which explode. This folder is mine.
 
-Welcome to the lab bench of my HTML learning. The notes in the parent folder explain the *theory*. This folder is where I actually **build it, break it, and fix it**. One idea per file, small enough to understand in a single sitting, runnable straight in your browser.
+The notes one level up explain the *theory*. This folder is where I **build it, break it, and fix it**: small, dated, one-idea-per-folder HTML experiments. Most are freeCodeCamp workshops that I rebuilt by hand.
 
----
-
-## 🚀 How to use this folder
-
-1. Open any `.html` file in your browser (double-click it, or right-click → *Open with* → your browser).
-2. Open the same file in a code editor and read the comments at the top.
-3. **Change something and see what happens.** That's the whole point. 🔧
-
-No build tools, no installs, no frameworks. Just HTML and a browser.
+Every project has its own `README.md` that says what it does, how to run it, and (honestly) what's still rough. 💥
 
 ---
 
-## 🗂️ What's in here
+## 🚀 Quick start
 
-| File | 🎯 What it demonstrates | 🔗 Related notes | Status |
-|------|------------------------|------------------|--------|
-| `hello-world.html` | The bare skeleton: doctype, head, body | [basics.md](../basics.md) | ✅ Solid |
-| `semantic-layout.html` | `header`, `nav`, `main`, `section`, `footer` | [semantic-html.md](../semantic-html.md) | 🔧 Practicing |
-| `contact-form.html` | Inputs, labels, validation attributes | [forms.md](../forms.md) | 🔧 Practicing |
-| `tables-and-media.html` | Tables, images, audio, video | [tables-and-media.md](../tables-and-media.md) | 🌱 Just started |
-| `accessible-page.html` | Alt text, ARIA basics, keyboard-friendly markup | [accessibility.md](../accessibility.md) | 🌱 Just started |
+1. Open any project folder.
+2. Double-click the `.html` file (or right-click → *Open with* → your browser).
+3. Open the same file in a code editor and **change something to see what happens.** That's the whole point. 🔧
 
-> ✏️ *Heads up: this table grows as I do. File names above are my planned lineup. If one is missing, it's still in the forge.*
-
-**Status key:** ✅ I get it · 🔧 Still practicing · 🌱 Just started
+No installs, no build tools, no frameworks. Just HTML and a browser. Some pages load images, audio, or video from freeCodeCamp's servers, so keep your internet connection on. 🌐
 
 ---
 
-## 📝 The format of every example
+## 🗓️ The lineup (in the order I built them)
 
-Each file follows the same blueprint so nothing is a mystery later:
+| Date | Project | What it's about | Key tags |
+|------|---------|-----------------|----------|
+| 27 Sep | [Cat Photo App](./27-09-2026-FREE-Code-Camp-WORKSHOP-Cat-App) | The basics: headings, links, images, lists, captions | `a` `img` `ul` `ol` `figure` |
+| 27 Sep | [XYZ Bookstore](./27-09-2026-FREE-Code-Camp-WORKSHOP-XYZ-Bookstore) | Card layout with `div`s, ready for CSS later | `div` `id` `class` `button` |
+| 29 Sep | [Music Player](./29-09-2026-Free-Code-Camp-Workshop-HTML-MusicPlayer) | Playing audio with no JavaScript | `audio` `controls` `loop` |
+| 29 Sep | [Video Player](./29-09-2026-Free-Code-Camp-Workshop-HTML-VideoPlayer) | Video in four formats, with a fallback | `video` `source` `poster` |
+| 30 Sep | [Cat Blog](./30-09-2026-Free-Code-Camp-Workshop-Cat-Blog) | Semantic page layout and in-page navigation | `header` `nav` `article` `footer` |
+| 30 Sep | [Job Tips Page](./30-09-2026-FREE-Code-Camp-Workshop-Job-Tips-page) | Quotes and citations | `q` `blockquote` `cite` |
+| 1 Oct | [Hotel Feedback Form](./01-10-2026-Free-Code-Camp-WORKSHOP-Hotel-Feedback-Form) | A full form with built-in validation | `form` `input` `select` `fieldset` |
+| 2 Oct | [Exam Table](./02-10-2026-Free-Code-Camp-WORKSHOP-Exam-Table) | A structured data table | `table` `thead` `tfoot` `colspan` |
 
-```html
-<!--
-  🎯 Goal:     what this file demonstrates
-  🧠 Concepts: tags/ideas used
-  🧪 Try this: one thing to change and see what happens
-  💥 Gotcha:   the mistake that got me (if any)
--->
+---
+
+## 🧠 Concept map: "where did I practice X?"
+
+| Concept | Practiced in |
+|---------|--------------|
+| Headings, paragraphs, links, images, lists | [Cat Photo App](./27-09-2026-FREE-Code-Camp-WORKSHOP-Cat-App) |
+| Semantic layout (`header`, `nav`, `main`, `footer`) | [Cat Blog](./30-09-2026-Free-Code-Camp-Workshop-Cat-Blog) |
+| In-page links, `tel:` and `mailto:` links | [Cat Blog](./30-09-2026-Free-Code-Camp-Workshop-Cat-Blog) |
+| Forms, input types, validation | [Hotel Feedback Form](./01-10-2026-Free-Code-Camp-WORKSHOP-Hotel-Feedback-Form) |
+| Tables | [Exam Table](./02-10-2026-Free-Code-Camp-WORKSHOP-Exam-Table) |
+| Audio | [Music Player](./29-09-2026-Free-Code-Camp-Workshop-HTML-MusicPlayer) |
+| Video and responsive media | [Video Player](./29-09-2026-Free-Code-Camp-Workshop-HTML-VideoPlayer) |
+| Quotes and citations | [Job Tips Page](./30-09-2026-FREE-Code-Camp-Workshop-Job-Tips-page) |
+| `div`, `id`, and `class` as hooks | [XYZ Bookstore](./27-09-2026-FREE-Code-Camp-WORKSHOP-XYZ-Bookstore) |
+
+---
+
+## 🗺️ Folder map
+
+```
+HTML/examples/
+├── README.md                                        ← you are here 📍
+├── 27-09-2026-FREE-Code-Camp-WORKSHOP-Cat-App/
+├── 27-09-2026-FREE-Code-Camp-WORKSHOP-XYZ-Bookstore/
+├── 29-09-2026-Free-Code-Camp-Workshop-HTML-MusicPlayer/
+├── 29-09-2026-Free-Code-Camp-Workshop-HTML-VideoPlayer/
+├── 30-09-2026-Free-Code-Camp-Workshop-Cat-Blog/
+├── 30-09-2026-FREE-Code-Camp-Workshop-Job-Tips-page/
+├── 01-10-2026-Free-Code-Camp-WORKSHOP-Hotel-Feedback-Form/
+└── 02-10-2026-Free-Code-Camp-WORKSHOP-Exam-Table/
 ```
 
-Then the code, then (when it's visual) a screenshot next to it. Future me will thank present me.
+**Naming convention:** `DD-MM-YYYY-Source-Project-Name`, so the folders sort themselves into a timeline. Each folder holds one `.html` file plus its own `README.md`.
 
 ---
 
-## 💥 Honest corner
+## 💥 Honest corner (known gremlins)
 
-I'm rebuilding my skills in public, which means some of these files are messy, over-commented, or flat-out wrong the first time. That's by design. The mistakes live in [`notes/things-i-broke.md`](../../notes/things-i-broke.md) and the breakthroughs in [`notes/things-i-finally-understood.md`](../../notes/things-i-finally-understood.md).
+I'm rebuilding my skills in public, so not everything here is polished, and I'd rather say so than hide it.
+
+| Project | The gremlin |
+|---------|-------------|
+| 📚 XYZ Bookstore | The buttons are decorative. There's no JavaScript yet. |
+| 📱 Five pages | Cat App, Bookstore, Cat Blog, Hotel Form, and Exam Table have no `viewport` meta tag yet, so they're not phone-friendly. |
+| 🎨 All of them | No CSS yet, so everything looks like 1995. |
+
+**✅ Already fixed (3 Oct):** a stray `"` in the Job Tips page, crooked indentation in the Cat App and Music Player, and the "Jop" typo in a folder name.
+
+I'll collect the lessons in `notes/things-i-broke.md` and `notes/things-i-finally-understood.md` once the notes folder exists.
 
 If you're a fellow learner: steal anything useful. If you're an employer: this is what my process looks like, iterating from **Mark I toward Mark 85**. 🦾
 
 ---
 
-## 🧭 Where to go next
+## 🔮 Mark II backlog
 
-- 📖 Back to the HTML notes: [`../README.md`](../README.md)
-- 🎨 Next up: the [CSS](../../CSS) folder, because HTML without style is just a skeleton
-- 🏠 Main repo: [`learning-archive`](../../README.md)
+- 🎨 Dress every page up with CSS (the Bookstore and Cat Blog are begging for it)
+- ⚡ Give the Bookstore buttons a brain with JavaScript
+- 📱 Add the `viewport` meta tag to the five pages that are missing it
+- ♿ Add `scope` to the table headers, captions to the video, and run an accessibility pass on the form
 
 ---
 
