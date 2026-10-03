@@ -1,50 +1,63 @@
-# 🐈‍⬛ Mr. Whiskers' Blog
+# 😺 Mr. Whiskers' Blog
 
-> *A tiny, beautifully structured HTML page where one very dramatic cat gets his own newspaper.*
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![freeCodeCamp](https://img.shields.io/badge/freeCodeCamp-workshop-0a0a23?style=flat-square&logo=freecodecamp&logoColor=white)
+![Date](https://img.shields.io/badge/built-30%20Sep%202026-lightgrey?style=flat-square)
+![Semantic](https://img.shields.io/badge/semantic-HTML-success?style=flat-square)
 
-🌺 ━━━━━━━━━━━━━━━━━━━━━━━━ 🌺
+> A blog by Jane Doe about her beloved cat. The suit gets a skeleton: header, nav, main, articles, footer. 🐾
 
-Some cats nap. Some cats knock glasses off tables. **Mr. Whiskers** does both, *and* has a blog, because frankly he deserved a platform.
+A freeCodeCamp workshop page that practices **semantic page structure**, where each part of the page uses the tag that describes what it actually is.
 
-This page comes from a **freeCodeCamp workshop** on semantic HTML. No CSS, no JavaScript, just tags doing their honest jobs, like a red spider lily blooming with zero leaves: bare, bold, and a little bit unreal. 🌺
+📄 **File:** [`30-09-2026-Free-Code-Camp-Workshop-Cat-Blog.html`](./30-09-2026-Free-Code-Camp-Workshop-Cat-Blog.html)
 
-## ✨ What's Inside
+---
 
-- 🖼️ **Header** with a welcome `<h1>`, a photo of Mr. Whiskers in the garden (`<figure>` + `<figcaption>`, fancy), and a `<nav>` that jumps you around the page.
-- 📖 **About** section where Jane Doe confesses her love for her cat (it's a lot).
-- 📝 **Posts** section with three `<article>`s:
-  1. *Mr. Whiskers' First Day Home*
-  2. *Mr. Whiskers' First Bath* (he has opinions)
-  3. *Mr. Whiskers' First Birthday Party*
-- 📬 **Footer** with a `<section>` and `<address>` for contact info (phone and email are fake, so please don't call Mr. Whiskers, he's busy).
+## 🗺️ Page anatomy
 
-## 🧱 Semantic Tags Practiced
+| Section | Tags | Contents |
+|---------|------|----------|
+| 🎩 Header | `<header>`, `<h1>`, `<figure>`, `<nav>` | Title, a photo of Mr. Whiskers with a caption, and a menu |
+| 🧭 Navigation | `<nav>` + `<ul>` + `<a href="#...">` | Jump links to **About**, **Posts**, and **Contact** |
+| 📝 About | `<section id="about">` | A short intro to Jane and her cat |
+| 📰 Posts | `<section id="posts">` + 3 × `<article>` | *First Day Home*, *First Bath*, *First Birthday Party* |
+| 📞 Contact | `<footer>`, `<address>` | A `tel:` link and a `mailto:` link |
 
-| Tag | Job |
-| --- | --- |
-| `<header>` | The grand entrance 🚪 |
-| `<nav>` | Signposts with anchor links 🧭 |
-| `<main>` | The heart of the page 💗 |
-| `<section>` | Themed chunks of content 🍰 |
-| `<article>` | Standalone blog posts 📰 |
-| `<figure>` / `<figcaption>` | Picture + its little label 🖼️ |
-| `<address>` | Contact details 📞 |
-| `<footer>` | The sign-off 👋 |
+---
 
-## 🚀 How to Run It
+## 🧠 What I practiced
 
-1. Save the file as `index.html`.
-2. Double-click it (or open it in your browser).
-3. That's it. No installs, no drama. Mr. Whiskers handles the drama. 🐾
+- **Semantic landmarks:** `header`, `nav`, `main`, `section`, `article`, `footer`
+- **In-page navigation:** `href="#about"` jumps to the element with `id="about"`
+- Special links: `tel:` (tap to call) and `mailto:` (opens your email app)
+- Wrapping contact details in `<address>`
+- Using `<figure>` and `<figcaption>` for an image with a caption
 
-## 🌱 Future Quests
+---
 
-- Give it some style with CSS (it's currently wearing only its birthday suit).
-- Replace the lorem ipsum with real tales of chaos.
-- Make it look lovely on phones.
+## 🚀 How to run it
 
-## 🙏 Credits
+Open the `.html` file in a browser, then click the menu links and watch the page jump to each section. The photo loads from freeCodeCamp's servers, so you'll need an internet connection.
 
-Built as part of the [freeCodeCamp](https://www.freecodecamp.org/) curriculum. Image and text are workshop placeholders. Jane Doe and her cat are fictional, but their bond is real. 💞
+---
 
-🌺 *Bloom where you're planted, meow where you're not.* 🌺
+## 💥 Honest corner
+
+- The post text is **Lorem ipsum** placeholder filler, and the phone number and email are fake.
+- No `viewport` meta tag, and no CSS, so the "menu" is just a bullet list.
+- The **Contact** section lives inside `<footer>`. That's valid, but it's worth remembering it's a choice.
+
+---
+
+## 🔮 Mark II ideas
+
+- Turn the bullet list into a horizontal navigation bar 🎨
+- Add smooth scrolling between sections
+- Write real posts about Mr. Whiskers (or a real cat)
+- Add dates to the articles with `<time>`
+
+---
+
+↩️ [Back to examples](../README.md)
+
+*Content is king. The cat is the emperor. 👑*
