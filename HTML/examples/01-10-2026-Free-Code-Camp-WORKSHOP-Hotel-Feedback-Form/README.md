@@ -1,79 +1,81 @@
-# 🌺 Hotel Feedback Form 🌺
+# 🏨 Hotel Feedback Form
 
-> *Like the red spider lily, this form blooms at the very end of a stay, right when guests are leaving. Then it asks, very politely: "So... how was it?"*
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![freeCodeCamp](https://img.shields.io/badge/freeCodeCamp-workshop-0a0a23?style=flat-square&logo=freecodecamp&logoColor=white)
+![Date](https://img.shields.io/badge/built-1%20Oct%202026-lightgrey?style=flat-square)
+![Forms](https://img.shields.io/badge/topic-forms-blueviolet?style=flat-square)
 
-A freeCodeCamp workshop project: a clean, semantic HTML feedback form for a hotel. No CSS, no JavaScript, just pure HTML petals. 🥀
+> The biggest suit upgrade yet: a page that **asks you things** and lets the browser check the answers. 📝
 
----
+A freeCodeCamp workshop form where guests rate their hotel stay. It uses nearly every common form control in one page.
 
-## 🕯️ What is this?
-
-Guests check out. Guests have opinions. This form catches those opinions before they float away like lantern smoke.
-
-It collects:
-
-- 🪪 **Who they are**: name, email, and (optionally) age
-- 🛎️ **First time here?**: a yes / no radio choice
-- 🧭 **Why they picked us**: checkboxes, pick as many as you like
-- ⭐ **How we did**: dropdown ratings for service and food
-- 💌 **Anything else**: a big open textarea for the juicy stuff
+📄 **File:** [`01-10-2026-Free-Code-Camp-WORKSHOP-Hotel-Feedback-Form.html`](./01-10-2026-Free-Code-Camp-WORKSHOP-Hotel-Feedback-Form.html)
 
 ---
 
-## 🌿 What's inside (the anatomy of the bloom)
+## 🧩 The form, section by section
 
-| Part | Tag(s) | Job |
-|------|--------|-----|
-| Welcome | `<header>`, `<h1>`, `<p>` | Says thank you like a good host |
-| The form | `<form method="POST" action="...">` | Sends everything off when guests press Submit |
-| Grouping | `<fieldset>` + `<legend>` | Keeps related questions together, like petals on one stem |
-| Text answers | `<input type="text">`, `type="email"`, `type="number"` | Name, email, age |
-| One choice | `<input type="radio">` | First visit: yes or no |
-| Many choices | `<input type="checkbox">` | Reasons for staying |
-| Pick from a list | `<select>` + `<option>` | Service and food ratings |
-| Long answer | `<textarea>` | Free-form comments |
-| Send it | `<button type="submit">` | The final step |
+| Section (`<fieldset>`) | Controls | Notes |
+|------------------------|----------|-------|
+| 👤 Personal Information | Text, email, number inputs | Name and email are `required`; age is optional with `min="3"` and `max="100"` |
+| 🔘 First time at the hotel? | Two **radio** buttons (Yes / No) | Same `name`, so only one can be chosen |
+| ☑️ Why did you choose us? | Five **checkboxes** | Pick several; *Reputation* starts pre-checked |
+| ⭐ Ratings | Two **dropdowns** (`<select>`) | Service and food, each defaulting to *Excellent* |
+| 💬 Comments | `<textarea>` | A 30 × 10 box for free text |
+| 📤 Submit | `<button type="submit">` | Sends the form with `method="POST"` |
 
 ---
 
-## 🪷 Little details that matter
+## 🧱 Form features worth remembering
 
-- **Every input has a `<label>`**, linked with `for` and `id`. Click the label, and the field wakes up. Screen readers also love this. 🔗
-- **`required`** on name and email, so nobody sneaks past without them. 🚪
-- **`type="email"`** gives free built-in validation. The browser plays bouncer. 🕴️
-- **`min="3"` and `max="100"`** keep the age field realistic.
-- **Radio buttons share one `name`** (`hotel-stay`), so only one can be chosen. Checkboxes share `choice`, so many can be.
-- **Defaults:** "Reputation" starts checked, and both ratings start on "Excellent". 🌟
+| Feature | What it does |
+|---------|--------------|
+| `<label for="x">` + `id="x"` | Connects a label to its input, so clicking the text focuses the field |
+| `<fieldset>` + `<legend>` | Groups related controls and gives the group a title |
+| `required` | The browser blocks submission if the field is empty |
+| `type="email"` | The browser checks for a valid-looking email address |
+| `placeholder` | Faint example text inside the field |
+| `checked` / `selected` | Sets the default choice |
+| `name` | The key the data is sent under; radios and checkboxes share one per group |
+| `value` | What actually gets sent for each option |
 
 ---
 
 ## 🚀 How to run it
 
-1. Save the file as `index.html`
-2. Open it in any browser
-3. Fill it in, press **Submit**
-4. The data goes off to the freeCodeCamp practice endpoint. ✨
+Open the `.html` file in a browser and fill it in. Try leaving **Name** or **Email** empty, or typing something that isn't an email, and watch the browser complain. 😄
 
-No installs, no build step, no drama.
+The form's `action` points to a freeCodeCamp practice URL, so treat submitting as practice and don't expect a real thank-you page.
 
 ---
 
-## 🌸 What I practiced
+## 🧠 What I practiced
 
-- Building forms the right way, with `action` and `method`
-- Grouping controls with `fieldset` and `legend`
-- Connecting labels to inputs
-- Choosing the right input type for each job
-- Using `required`, `placeholder`, `checked`, and `selected`
-
----
-
-## 🔮 Maybe next...
-
-- 🎨 Add CSS so the form stops looking like a 1999 tax document
-- 📱 Make it responsive for guests filling it in from their phone in the taxi
-- ✅ Add a "thank you" page after submit
+- Choosing the right control: radio for one choice, checkbox for many, select for a list
+- Built-in browser validation (no JavaScript needed!)
+- Accessible labeling with `for` and `id`
+- Grouping with `fieldset` and `legend`
 
 ---
 
-*Made with curiosity, a cup of tea, and a field of red spider lilies in the back of my mind.* 🌺
+## 💥 Honest corner
+
+- The radio buttons aren't `required`, so someone can skip that question.
+- Spacing is rough since there's no CSS yet: everything sits in a line.
+- `size="20"` appears on some inputs and not others. A tiny inconsistency to tidy up.
+- No `viewport` meta tag.
+
+---
+
+## 🔮 Mark II ideas
+
+- Style the form with CSS: spacing, focus states, a friendly layout 🎨
+- Add `required` to the radio group
+- Add a star-rating or range slider
+- Handle the submission for real with a small backend or JavaScript
+
+---
+
+↩️ [Back to examples](../README.md)
+
+*Your feedback is important to us. (Said every form ever.) 💌*
