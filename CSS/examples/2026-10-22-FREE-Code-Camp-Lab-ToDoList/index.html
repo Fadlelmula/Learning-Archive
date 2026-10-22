@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Tells the browser this is a modern HTML5 document -->
+<html lang="en">
+  <head>
+    <!-- Character encoding so symbols and accents display correctly -->
+    <meta charset="UTF-8" />
+    <!-- Makes the page scale properly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekend Quest Log</title>
+    <!-- Links the stylesheet: without this line, none of the CSS is applied -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Weekend Quest Log</h1>
+      <p class="tagline">Tick off a quest, then visit its link to level up.</p>
+
+      <!-- Story 1: ONE unordered list with the class "todo-list" -->
+      <ul class="todo-list">
+
+        <!-- Story 2: four <li> items directly inside the list. This is item 1. -->
+        <li>
+          <!-- Story 3: checkbox with a UNIQUE id (quest-1) -->
+          <input type="checkbox" id="quest-1" />
+          <!-- The label's "for" must match the input's id, so clicking the text toggles the box -->
+          <label for="quest-1">Learn CSS link states</label>
+          <!-- Nested unordered list with class "sub-item" -->
+          <ul class="sub-item">
+            <li>
+              <!-- Anchor: class sub-item-link, real href, target="_blank" opens a new tab.
+                   rel="noopener noreferrer" is a security best practice for new-tab links. -->
+              <a class="sub-item-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" target="_blank" rel="noopener noreferrer">Read the MDN :hover guide</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Item 2 (unique id: quest-2) -->
+        <li>
+          <input type="checkbox" id="quest-2" />
+          <label for="quest-2">Practice HTML structure</label>
+          <ul class="sub-item">
+            <li>
+              <a class="sub-item-link" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" rel="noopener noreferrer">Browse the MDN HTML course</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Item 3 (unique id: quest-3) -->
+        <li>
+          <input type="checkbox" id="quest-3" />
+          <label for="quest-3">Explore accessibility basics</label>
+          <ul class="sub-item">
+            <li>
+              <a class="sub-item-link" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="_blank" rel="noopener noreferrer">Open the W3C accessibility intro</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Item 4 (unique id: quest-4) -->
+        <li>
+          <input type="checkbox" id="quest-4" />
+          <label for="quest-4">Build a small project</label>
+          <ul class="sub-item">
+            <li>
+              <a class="sub-item-link" href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">Start a freeCodeCamp lab</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+/* ---------- Page basics ---------- */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #14161f;            /* deep night-blue background */
+  color: #e8e6f0;                 /* soft off-white text */
+  font-family: "Segoe UI", system-ui, sans-serif;
+  display: flex;                  /* flexbox lets us center the card easily */
+  justify-content: center;
+  padding: 40px 16px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  max-width: 560px;
+}
+
+h1 {
+  margin: 0 0 4px;
+  color: #ffd166;                 /* golden heading */
+}
+
+.tagline {
+  margin: 0 0 24px;
+  color: #9a98ad;
+}
+
+/* ---------- The to-do list ---------- */
+.todo-list {
+  list-style: none;               /* remove default bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list > li {                 /* ">" = only the four top-level items, not the nested ones */
+  background: #1f2233;
+  border-left: 5px solid #6c5ce7; /* purple accent stripe */
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+}
+
+/* Checked state: the "+" / "~" combinators target the label AFTER a checked box */
+input[type="checkbox"]:checked ~ label {
+  text-decoration: line-through;  /* strike through completed quests (label only, not links) */
+  color: #7d7b92;
+}
+
+label {
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.sub-item {
+  list-style: none;
+  margin: 8px 0 0 28px;           /* indent under the checkbox */
+  padding: 0;
+}
+
+/* ---------- Link styles (Stories 4-9) ---------- */
+/* ORDER MATTERS: link -> visited -> hover -> focus -> active ("LoVe HAte" rule).
+   Later rules override earlier ones when states overlap. */
+
+/* Story 4: remove underlines from every link */
+a {
+  text-decoration: none;
+}
+
+/* Story 5: unvisited links = sky blue */
+a:link {
+  color: #4dd0e1;
+}
+
+/* Story 6: visited links = lavender */
+a:visited {
+  color: #b39ddb;
+}
+
+/* Story 7: hovered links = bright orange */
+a:hover {
+  color: #ff9f43;
+}
+
+/* Story 8: focused links (e.g. via Tab key) get a colored outline */
+a:focus {
+  outline: 3px solid #ffd166;     /* golden outline */
+  outline-offset: 3px;            /* gap between link and outline so it's easy to see */
+}
+
+/* Story 9: while being clicked/pressed = hot pink */
+a:active {
+  color: #ff4d8d;
+}
